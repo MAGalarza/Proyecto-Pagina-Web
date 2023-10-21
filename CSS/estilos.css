@@ -64,6 +64,7 @@ body {
   width: 50%;
   font-size: 1rem;
 }
+
 .navegacion {
   display: flex;
   align-items: center;
@@ -522,7 +523,7 @@ body {
 
 @media screen and (max-width:800px) {
 
-  
+
   .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -530,30 +531,31 @@ body {
     padding: 35px 0px;
   }
 
-  
+
 
   @media screen and (max-width:800px) {
 
     .fieldsetForm,
     .fieldsetFormDatosP,
-    .formulario,
-    .contenedorFormulario {
+    .formulario
+     {
       display: grid;
       width: auto;
-      grid-template-columns: 2fr;
-      border: none;
+      grid-template-columns: 1fr 1fr;
 
     }
-
-  }
-
-  @media screen and (max-width:400px) {
-
-    .fieldsetForm,
-    .fieldsetFormDatosP,
-    .formulario,
-    .contenedorFormulario {
-      display: grid;
-      grid-template-columns: 1fr;
+    .formulario__input{
+    font-size: medium;
     }
-  }
+    
+
+    @media screen and (max-width:400px) {
+
+      .fieldsetForm,
+      .fieldsetFormDatosP,
+      .formulario,
+      .contenedorFormulario {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
