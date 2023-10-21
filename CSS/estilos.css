@@ -189,9 +189,10 @@ body {
 /*ESTILOS PARA LA API*/
 
 .contenedor .widget-1 {
-  background: #55a8fd;
-  color: #fbfbfb;
+  background: #f1f0ef;
+  color:white;
   font-style: bold;
+  font-weight: bold;
   height: auto;
   width: auto;
   text-align: center;
@@ -208,11 +209,11 @@ body {
   display: inline-block;
   margin: 10px;
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid rgb(231, 231, 237);
   border-radius: 10px;
   padding: 10px;
-  width: 300px;
-  background-color: rgb(137, 201, 222);
+  width: 200px;
+  background-color:#00477b;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -522,8 +523,6 @@ body {
 /* @MEDIA SCREEN */
 
 @media screen and (max-width:800px) {
-
-
   .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -531,31 +530,31 @@ body {
     padding: 35px 0px;
   }
 
+}
+
+@media screen and (max-width:800px) {
+
+  .fieldsetForm,
+  .fieldsetFormDatosP,
+  .formulario {
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+} 
+  
+  
 
 
-  @media screen and (max-width:800px) {
+@media screen and (max-width:400px) {
 
-    .fieldsetForm,
-    .fieldsetFormDatosP,
-    .formulario
-     {
-      display: grid;
-      width: auto;
-      grid-template-columns: 1fr 1fr;
-
-    }
-    .formulario__input{
-    font-size: medium;
-    }
-    
-
-    @media screen and (max-width:400px) {
-
-      .fieldsetForm,
-      .fieldsetFormDatosP,
-      .formulario,
-      .contenedorFormulario {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-    }
+  .fieldsetForm,
+  .fieldsetFormDatosP,
+  .formulario,
+  .contenedorFormulario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

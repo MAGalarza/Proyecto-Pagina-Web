@@ -5,7 +5,7 @@ const expresiones = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
-
+let fvalida = document.getElementById("fvalida")
 
 fvalida.addEventListener('submit', e => {
     e.preventDefault();
