@@ -504,7 +504,15 @@ position: relative;
 
       /* OTRAS PAGINAS */
 
-
+      @media screen  and (max-width:800px) {
+        .fieldsetForm,
+        .fieldsetFormDatosP,
+        .formulario,
+        .contenedorFormulario{
+          display: grid;
+          grid-template-columns: 2fr;
+        }
+      }
 
       @media screen  and (max-width:400px) {
         .fieldsetForm,
